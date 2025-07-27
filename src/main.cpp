@@ -4,6 +4,7 @@
 #include <vector>
 #include <cmath>
 #include "../include/Object.h"
+#include "../include/Vect3.h"
 float screenHeight = 600.0f;
 float screenWidth = 800.0f;
 
@@ -43,10 +44,8 @@ int main() {
     //Object initialization -------------------------------------------------------------------------------------------------------------------
     std::vector<Object> objects;
 
-    Object circle1("triangle", objects.size(), startX, startY);
+    Object circle1("triangle", objects.size());
     objects.push_back(circle1);
-    Object circle2("circle", objects.size(), startX, 0);
-    objects.push_back(circle2);
     //-----------------------------------------------------------------------------------------------------------------------------------------
     
     

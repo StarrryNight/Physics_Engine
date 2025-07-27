@@ -3,62 +3,46 @@
 #include <vector>
 #include <cmath>
 #include "../include/Object.h"
+#include "../include/Vect3.h"
 
 Object::Object(const std::string& name,
         int id,
-        float x,
-        float y,
-        float v_ix,
-        float v_iy,
-        float a_ix,
-        float a_iy
+        Vect3 init_pos,
+        Vect3 init_vel,
+        Vect3 init_acc
         ):
         name(name),
         id(id),
-        pos_x(x),
-        pos_y(y),
-        vel_x(v_ix),
-        vel_y(v_iy),
-        acc_x(a_ix),
-        acc_y(a_iy) {}
+        position(init_pos),
+        velocity(init_vel),
+        acceleration(init_acc) {}
 
 void Object::disrupt(
-        float dx,
-        float dy,
-        float dvx,
-        float dvy,
-        float dax,
-        float day){
-            pos_x+=dx;
-            pos_y += dy;
-            vel_x += dvx;
-            vel_y += dvy;
-            acc_x += dax;
-            acc_y += day;
+        Vect3 ds,
+        Vect3 dv,
+        Vect3 da){
+            position.add(ds);
+            velocity.add(dv);
+            acceleration.add(da);
         }
 
 void Object::update(float dt){
     //change x
-    vel_x += dt*acc_x;
-    pos_x += dt*vel_x;
+    velocity = velocity.add(acceleration.mult(dt));
+    position = position.add(velocity.mult(dt));
 
-    //change y
-    vel_y += dt*acc_y;
-    pos_y += dt*vel_y;
-    std::cout << "dt: " << dt << ", pos: (" << pos_x << ", " << pos_y << ")" << std::endl;
+    std::cout << "dt: " << dt << ", pos: (" << position.x << ", " << position.y << ")" << std::endl;
 }
 
 void Object::render(){
     glColor3f(1.0f, 0.0f, 0.0f);
     glBegin(GL_TRIANGLE_FAN);
         
-    float cenX = pos_x;
-    float cenY = pos_y;
     float r=50;
     for (int i = 0; i <= 100; i++){
             float angle = 2.0f * 3.14159265f * i / 100;
-            float x = cenX + cos(angle) * r;
-            float y = cenY + sin(angle) * r;
+            float x = position.x + cos(angle) * r;
+            float y = position.y + sin(angle) * r;
             glVertex2d(x, y);
         }
 
