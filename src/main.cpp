@@ -3,8 +3,8 @@
 #include <iostream>
 #include <vector>
 #include <cmath>
+#include <glm/glm.hpp>
 #include "../include/Object.h"
-#include "../include/Vect3.h"
 float screenHeight = 600.0f;
 float screenWidth = 800.0f;
 
@@ -44,7 +44,7 @@ int main() {
     //Object initialization -------------------------------------------------------------------------------------------------------------------
     std::vector<Object> objects;
 
-    Object circle1("triangle", objects.size());
+    Object circle1("triangle", objects.size(), glm::vec3(startX, startY, 0.0f));
     objects.push_back(circle1);
     //-----------------------------------------------------------------------------------------------------------------------------------------
     

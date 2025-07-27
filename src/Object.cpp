@@ -3,13 +3,12 @@
 #include <vector>
 #include <cmath>
 #include "../include/Object.h"
-#include "../include/Vect3.h"
-
+#include <glm/glm.hpp>
 Object::Object(const std::string& name,
         int id,
-        Vect3 init_pos,
-        Vect3 init_vel,
-        Vect3 init_acc
+        glm::vec3 init_pos,
+        glm::vec3 init_vel,
+        glm::vec3 init_acc
         ):
         name(name),
         id(id),
@@ -18,18 +17,18 @@ Object::Object(const std::string& name,
         acceleration(init_acc) {}
 
 void Object::disrupt(
-        Vect3 ds,
-        Vect3 dv,
-        Vect3 da){
-            position.add(ds);
-            velocity.add(dv);
-            acceleration.add(da);
+        glm::vec3 ds,
+        glm::vec3 dv,
+        glm::vec3 da){
+           position += ds;
+           velocity += dv;
+           acceleration += da;
         }
 
 void Object::update(float dt){
     //change x
-    velocity = velocity.add(acceleration.mult(dt));
-    position = position.add(velocity.mult(dt));
+    velocity += acceleration*dt;
+    position += velocity*dt;
 
     std::cout << "dt: " << dt << ", pos: (" << position.x << ", " << position.y << ")" << std::endl;
 }

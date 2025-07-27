@@ -7,22 +7,23 @@
 #include <GLFW/glfw3.h>
 #include <iostream>
 #include <cmath>
-#include "../include/Vect3.h"
+#include <string>
+#include <glm/glm.hpp>
+
 class Object{
     public:  
         Object(const std::string& name,
         int id,
-        
-        Vect3 init_pos = Vect3{0,0,0},
-        Vect3 init_vel = Vect3{0,0,0},
-        Vect3 init_acc = Vect3{0,98.1,0}
+        glm::vec3 init_pos = glm::vec3(0.0f, 0.0f, 0.0f),
+        glm::vec3 init_vel = glm::vec3(0.0f, 0.0f, 0.0f),
+        glm::vec3 init_acc = glm::vec3(0.0f, 981.0f, 0.0f)
         );
 
 
         void disrupt(
-        Vect3 ds = Vect3{0,0,0},
-        Vect3 dv = Vect3{0,0,0},
-        Vect3 da = Vect3{0,0,0});
+        glm::vec3 ds = glm::vec3(0.0f, 0.0f, 0.0f),
+        glm::vec3 dv = glm::vec3(0.0f, 0.0f, 0.0f),
+        glm::vec3 da = glm::vec3(0.0f, 0.0f, 0.0f));
 
         void update(
             float dt
@@ -34,9 +35,9 @@ class Object{
         private:
             const std::string& name;
             int id;
-            Vect3 position;
-            Vect3 velocity;
-            Vect3 acceleration;
+            glm::vec3 position;
+            glm::vec3 velocity;
+            glm::vec3 acceleration;
 };
 
 #endif
