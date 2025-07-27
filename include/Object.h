@@ -18,7 +18,7 @@ class Object{
         float v_ix = 0,
         float v_iy = 0,
         float a_ix = 0,
-        float a_iy = 9.81);
+        float a_iy = 98.1);
 
 
         void disrupt(

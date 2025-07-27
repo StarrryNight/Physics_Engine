@@ -49,6 +49,9 @@ void Object::update(float dt){
 }
 
 void Object::render(){
+    glColor3f(1.0f, 0.0f, 0.0f);
+    glBegin(GL_TRIANGLE_FAN);
+        
     float cenX = pos_x;
     float cenY = pos_y;
     float r=50;
@@ -58,4 +61,6 @@ void Object::render(){
             float y = cenY + sin(angle) * r;
             glVertex2d(x, y);
         }
+
+     glEnd();
 }

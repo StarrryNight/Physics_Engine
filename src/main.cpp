@@ -7,7 +7,6 @@
 float screenHeight = 600.0f;
 float screenWidth = 800.0f;
 
-void create_circle(int cenX, int cenY, int r, int res);
 GLFWwindow* StartGLFW();
 int main() {
     std::cout << "Starting program..." << std::endl;
@@ -36,38 +35,42 @@ int main() {
 
     float startX = screenWidth/5.0f;
     float startY = screenHeight/2.0f;
-    float v_y = 0;
     
-    float radius = 50.0f;
-    int res = 100;
-    //set gravity
-    float gravity  = 9.81f;
 
     float prev_time = 0;
     std::cout << "Entering main loop..." << std::endl;
 
+    //Object initialization -------------------------------------------------------------------------------------------------------------------
+    std::vector<Object> objects;
 
-    Object circle("triangle", 1);
+    Object circle1("triangle", objects.size(), startX, startY);
+    objects.push_back(circle1);
+    Object circle2("circle", objects.size(), startX, 0);
+    objects.push_back(circle2);
+    //-----------------------------------------------------------------------------------------------------------------------------------------
+    
+    
+    
     while(!glfwWindowShouldClose(window)){
-        //set delta t
+        //initialize each scene
+        glClear(GL_COLOR_BUFFER_BIT);
+        
+        //Update objects' physics
         float curr_time = glfwGetTime();
         float dt = curr_time - prev_time;
         prev_time = curr_time;
-
-
-        
-
-        glClear(GL_COLOR_BUFFER_BIT);
+        for (auto& ob: objects){
+            ob.update(dt);
+        }
         std::cerr << dt << std::endl;
-        // Set color to red
-        glColor3f(1.0f, 0.0f, 0.0f);
-        
-        glBegin(GL_TRIANGLE_FAN);
-        circle.update(dt);
-        circle.render();
-        
-        glEnd();
 
+       //render each objct
+        for (auto& ob: objects){
+            ob.render();
+        }
+        
+       
+        //display
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
