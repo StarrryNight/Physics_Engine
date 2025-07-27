@@ -16,7 +16,7 @@ class Object{
         int id,
         glm::vec3 init_pos = glm::vec3(0.0f, 0.0f, 0.0f),
         glm::vec3 init_vel = glm::vec3(0.0f, 0.0f, 0.0f),
-        glm::vec3 init_acc = glm::vec3(0.0f, 981.0f, 0.0f)
+        glm::vec3 init_acc = glm::vec3(0.0f, 1500.0f, 0.0f)
         );
 
 
