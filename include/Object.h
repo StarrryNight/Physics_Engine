@@ -1,4 +1,4 @@
-//object class
+//object class header file
 
 
 #ifndef OBJECT_H
@@ -12,13 +12,13 @@
 class Object{
     public:  
         Object(const std::string& name,
-        int id ,
+        int id,
         float x = 0,
         float y = 0,
-        float a_ix = 0,
-        float a_iy = 9.81,
         float v_ix = 0,
-        float v_iy = 0 );
+        float v_iy = 0,
+        float a_ix = 0,
+        float a_iy = 9.81);
 
 
         void disrupt(
@@ -30,16 +30,19 @@ class Object{
         float day = 0);
 
         void update(
-            float dt;
+            float dt
         );
 
+        void render();
         private:
-            const std::string& name,
-            int id ,
+            const std::string& name;
+            int id;
             float pos_x = 0;
             float pos_y = 0;
             float vel_x = 0;
             float vel_y = 0;
             float acc_x = 0;
             float acc_y = 0;
-}
+};
+
+#endif

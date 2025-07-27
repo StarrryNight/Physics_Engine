@@ -3,7 +3,7 @@
 #include <iostream>
 #include <vector>
 #include <cmath>
-
+#include "../include/Object.h"
 float screenHeight = 600.0f;
 float screenWidth = 800.0f;
 
@@ -45,6 +45,9 @@ int main() {
 
     float prev_time = 0;
     std::cout << "Entering main loop..." << std::endl;
+
+
+    Object circle("triangle", 1);
     while(!glfwWindowShouldClose(window)){
         //set delta t
         float curr_time = glfwGetTime();
@@ -52,9 +55,7 @@ int main() {
         prev_time = curr_time;
 
 
-        //gravity effect
-        v_y += dt*gravity;
-        startY+= dt*v_y;
+        
 
         glClear(GL_COLOR_BUFFER_BIT);
         std::cerr << dt << std::endl;
@@ -62,7 +63,8 @@ int main() {
         glColor3f(1.0f, 0.0f, 0.0f);
         
         glBegin(GL_TRIANGLE_FAN);
-        create_circle(startX, startY,radius,res);
+        circle.update(dt);
+        circle.render();
         
         glEnd();
 
@@ -74,16 +76,7 @@ int main() {
     glfwDestroyWindow(window);
     glfwTerminate();
     return 0;
-}
-
-void create_circle(int cenX, int cenY, int r, int res){
-for (int i = 0; i <= res; i++){
-            float angle = 2.0f * 3.14159265f * i / res;
-            float x = cenX + cos(angle) * r;
-            float y = cenY + sin(angle) * r;
-            glVertex2d(x, y);
-        }
-}
+} 
 
 GLFWwindow* StartGLFW(){
     std::cout << "Initializing GLFW..." << std::endl;
