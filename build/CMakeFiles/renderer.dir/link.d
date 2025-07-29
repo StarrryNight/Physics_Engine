@@ -5,6 +5,8 @@ renderer: \
   CMakeFiles/renderer.dir/src/main.cpp.o \
   CMakeFiles/renderer.dir/src/Object.cpp.o \
   CMakeFiles/renderer.dir/src/Vect3.cpp.o \
+  CMakeFiles/renderer.dir/src/glad.c.o \
+  CMakeFiles/renderer.dir/src/Shader.cpp.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libGL.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libglfw.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libstdc++.so \
@@ -52,6 +54,10 @@ CMakeFiles/renderer.dir/src/main.cpp.o:
 CMakeFiles/renderer.dir/src/Object.cpp.o:
 
 CMakeFiles/renderer.dir/src/Vect3.cpp.o:
+
+CMakeFiles/renderer.dir/src/glad.c.o:
+
+CMakeFiles/renderer.dir/src/Shader.cpp.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libGL.so:
 

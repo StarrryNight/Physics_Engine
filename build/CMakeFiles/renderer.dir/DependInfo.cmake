@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/Samuel/Desktop/Projects/renderer/src/glad.c" "CMakeFiles/renderer.dir/src/glad.c.o" "gcc" "CMakeFiles/renderer.dir/src/glad.c.o.d"
   "/home/Samuel/Desktop/Projects/renderer/src/Object.cpp" "CMakeFiles/renderer.dir/src/Object.cpp.o" "gcc" "CMakeFiles/renderer.dir/src/Object.cpp.o.d"
+  "/home/Samuel/Desktop/Projects/renderer/src/Shader.cpp" "CMakeFiles/renderer.dir/src/Shader.cpp.o" "gcc" "CMakeFiles/renderer.dir/src/Shader.cpp.o.d"
   "/home/Samuel/Desktop/Projects/renderer/src/Vect3.cpp" "CMakeFiles/renderer.dir/src/Vect3.cpp.o" "gcc" "CMakeFiles/renderer.dir/src/Vect3.cpp.o.d"
   "/home/Samuel/Desktop/Projects/renderer/src/main.cpp" "CMakeFiles/renderer.dir/src/main.cpp.o" "gcc" "CMakeFiles/renderer.dir/src/main.cpp.o.d"
   "" "renderer" "gcc" "CMakeFiles/renderer.dir/link.d"

@@ -2,8 +2,12 @@ file(REMOVE_RECURSE
   "CMakeFiles/renderer.dir/link.d"
   "CMakeFiles/renderer.dir/src/Object.cpp.o"
   "CMakeFiles/renderer.dir/src/Object.cpp.o.d"
+  "CMakeFiles/renderer.dir/src/Shader.cpp.o"
+  "CMakeFiles/renderer.dir/src/Shader.cpp.o.d"
   "CMakeFiles/renderer.dir/src/Vect3.cpp.o"
   "CMakeFiles/renderer.dir/src/Vect3.cpp.o.d"
+  "CMakeFiles/renderer.dir/src/glad.c.o"
+  "CMakeFiles/renderer.dir/src/glad.c.o.d"
   "CMakeFiles/renderer.dir/src/main.cpp.o"
   "CMakeFiles/renderer.dir/src/main.cpp.o.d"
   "renderer"
@@ -11,6 +15,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang CXX)
+foreach(lang C CXX)
   include(CMakeFiles/renderer.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

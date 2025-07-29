@@ -1,7 +1,8 @@
 CMakeFiles/renderer.dir/src/Object.cpp.o: \
  /home/Samuel/Desktop/Projects/renderer/src/Object.cpp \
- /usr/include/stdc-predef.h /usr/include/GLFW/glfw3.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stddef.h \
+ /usr/include/stdc-predef.h \
+ /home/Samuel/Desktop/Projects/renderer/src/../include/glad.h \
+ /usr/include/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -11,8 +12,8 @@ CMakeFiles/renderer.dir/src/Object.cpp.o: \
  /usr/include/bits/types.h /usr/include/bits/typesizes.h \
  /usr/include/bits/time64.h /usr/include/bits/wchar.h \
  /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
- /usr/include/bits/stdint-least.h /usr/include/GL/gl.h \
- /usr/include/GL/glext.h /usr/include/KHR/khrplatform.h \
+ /usr/include/bits/stdint-least.h /usr/include/GLFW/glfw3.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stddef.h \
  /usr/include/c++/15.1.1/iostream \
  /usr/include/c++/15.1.1/bits/requires_hosted.h \
  /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -171,12 +172,11 @@ CMakeFiles/renderer.dir/src/Object.cpp.o: \
  /usr/include/c++/15.1.1/tr1/modified_bessel_func.tcc \
  /usr/include/c++/15.1.1/tr1/poly_hermite.tcc \
  /usr/include/c++/15.1.1/tr1/poly_laguerre.tcc \
- /usr/include/c++/15.1.1/tr1/riemann_zeta.tcc \
- /home/Samuel/Desktop/Projects/renderer/src/../include/Object.h \
- /usr/include/glm/glm.hpp /usr/include/glm/detail/_fixes.hpp \
- /usr/include/glm/detail/setup.hpp /usr/include/c++/15.1.1/cassert \
- /usr/include/assert.h /usr/include/glm/simd/platform.h \
- /usr/include/c++/15.1.1/cstdint /usr/include/c++/15.1.1/climits \
+ /usr/include/c++/15.1.1/tr1/riemann_zeta.tcc /usr/include/glm/glm.hpp \
+ /usr/include/glm/detail/_fixes.hpp /usr/include/glm/detail/setup.hpp \
+ /usr/include/c++/15.1.1/cassert /usr/include/assert.h \
+ /usr/include/glm/simd/platform.h /usr/include/c++/15.1.1/cstdint \
+ /usr/include/c++/15.1.1/climits \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/limits.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/syslimits.h \
  /usr/include/limits.h /usr/include/bits/posix1_lim.h \
@@ -294,4 +294,7 @@ CMakeFiles/renderer.dir/src/Object.cpp.o: \
  /usr/include/glm/packing.hpp /usr/include/glm/detail/func_packing.inl \
  /usr/include/glm/detail/type_half.hpp \
  /usr/include/glm/detail/type_half.inl /usr/include/glm/integer.hpp \
- /usr/include/glm/detail/func_integer.inl
+ /usr/include/glm/detail/func_integer.inl \
+ /home/Samuel/Desktop/Projects/renderer/src/../include/Object.h \
+ /home/Samuel/Desktop/Projects/renderer/src/../include/../include/Shader.h \
+ /home/Samuel/Desktop/Projects/renderer/src/../include/Shader.h
