@@ -1,10 +1,13 @@
 
+#include "../include/glad.h"
 #include <GLFW/glfw3.h>
 #include <iostream>
 #include <vector>
 #include <cmath>
 #include <glm/glm.hpp>
 #include "../include/Object.h"
+#include "../include/Shader.h"
+
 float screenHeight = 600.0f;
 float screenWidth = 800.0f;
 
@@ -23,15 +26,15 @@ int main() {
 
     // Make the window's context current
     glfwMakeContextCurrent(window);
-    std::cout << "Context made current" << std::endl;
+    
+    // Initialize GLAD
+    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
+        std::cout << "Failed to initialize GLAD" << std::endl;
+        return -1;
+    }
     
     // Set up the viewport and projection
     glViewport(0, 0, screenWidth, screenHeight);
-    glMatrixMode(GL_PROJECTION);
-    glLoadIdentity();
-    glOrtho(0, screenWidth, screenHeight, 0, -1, 1);
-    glMatrixMode(GL_MODELVIEW);
-    glLoadIdentity();
     std::cout << "OpenGL setup complete" << std::endl;
 
     float startX = screenWidth/5.0f;
@@ -41,33 +44,26 @@ int main() {
     float prev_time = 0;
     std::cout << "Entering main loop..." << std::endl;
 
+    // Create shader
+    Shader d_shader("vertex", "fragment");  // Using default shaders from Shader class
+    
     //Object initialization -------------------------------------------------------------------------------------------------------------------
     std::vector<Object> objects;
 
-    Object circle1("triangle", objects.size(), glm::vec3(startX, startY, 0.0f));
+    Object circle1("triangle", objects.size(), &d_shader, glm::vec3(startX, startY, 0.0f));
     objects.push_back(circle1);
     //-----------------------------------------------------------------------------------------------------------------------------------------
     
-    
+    // Setup the object
+    circle1.setup();
     
     while(!glfwWindowShouldClose(window)){
-        //initialize each scene
+        // Clear the screen
+        glClearColor(0.07f, 0.13f, 0.17f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
         
-        //Update objects' physics
-        float curr_time = glfwGetTime();
-        float dt = curr_time - prev_time;
-        prev_time = curr_time;
-        for (auto& ob: objects){
-            ob.update(dt);
-        }
-        std::cerr << dt << std::endl;
-
-       //render each objct
-        for (auto& ob: objects){
-            ob.render();
-        }
-        
+        // Render the object
+        circle1.render();
        
         //display
         glfwSwapBuffers(window);
@@ -94,6 +90,7 @@ GLFWwindow* StartGLFW(){
         glfwTerminate();
         return nullptr;
     }
+
     std::cout << "Window created" << std::endl;
     return window;
 }

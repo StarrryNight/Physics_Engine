@@ -1,0 +1,22 @@
+# Build files
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+*.o
+*.out
+renderer
+
+# Local dependencies (use system packages instead)
+include/glm/
+include/GLFW/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db 
