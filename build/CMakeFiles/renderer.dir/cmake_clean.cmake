@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/renderer.dir/link.d"
+  "CMakeFiles/renderer.dir/src/Camera.cpp.o"
+  "CMakeFiles/renderer.dir/src/Camera.cpp.o.d"
   "CMakeFiles/renderer.dir/src/EBO.cpp.o"
   "CMakeFiles/renderer.dir/src/EBO.cpp.o.d"
   "CMakeFiles/renderer.dir/src/Object.cpp.o"

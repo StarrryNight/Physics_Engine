@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/Samuel/Desktop/Projects/renderer/src/glad.c" "CMakeFiles/renderer.dir/src/glad.c.o" "gcc" "CMakeFiles/renderer.dir/src/glad.c.o.d"
+  "/home/Samuel/Desktop/Projects/renderer/src/Camera.cpp" "CMakeFiles/renderer.dir/src/Camera.cpp.o" "gcc" "CMakeFiles/renderer.dir/src/Camera.cpp.o.d"
   "/home/Samuel/Desktop/Projects/renderer/src/EBO.cpp" "CMakeFiles/renderer.dir/src/EBO.cpp.o" "gcc" "CMakeFiles/renderer.dir/src/EBO.cpp.o.d"
   "/home/Samuel/Desktop/Projects/renderer/src/Object.cpp" "CMakeFiles/renderer.dir/src/Object.cpp.o" "gcc" "CMakeFiles/renderer.dir/src/Object.cpp.o.d"
   "/home/Samuel/Desktop/Projects/renderer/src/Shader.cpp" "CMakeFiles/renderer.dir/src/Shader.cpp.o" "gcc" "CMakeFiles/renderer.dir/src/Shader.cpp.o.d"
