@@ -142,13 +142,58 @@ CMakeFiles/renderer.dir/src/Shader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/renderer.dir/src/Shader.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Samuel/Desktop/Projects/renderer/src/Shader.cpp -o CMakeFiles/renderer.dir/src/Shader.cpp.s
 
+CMakeFiles/renderer.dir/src/VAO.cpp.o: CMakeFiles/renderer.dir/flags.make
+CMakeFiles/renderer.dir/src/VAO.cpp.o: /home/Samuel/Desktop/Projects/renderer/src/VAO.cpp
+CMakeFiles/renderer.dir/src/VAO.cpp.o: CMakeFiles/renderer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Samuel/Desktop/Projects/renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/renderer.dir/src/VAO.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/renderer.dir/src/VAO.cpp.o -MF CMakeFiles/renderer.dir/src/VAO.cpp.o.d -o CMakeFiles/renderer.dir/src/VAO.cpp.o -c /home/Samuel/Desktop/Projects/renderer/src/VAO.cpp
+
+CMakeFiles/renderer.dir/src/VAO.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/renderer.dir/src/VAO.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Samuel/Desktop/Projects/renderer/src/VAO.cpp > CMakeFiles/renderer.dir/src/VAO.cpp.i
+
+CMakeFiles/renderer.dir/src/VAO.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/renderer.dir/src/VAO.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Samuel/Desktop/Projects/renderer/src/VAO.cpp -o CMakeFiles/renderer.dir/src/VAO.cpp.s
+
+CMakeFiles/renderer.dir/src/VBO.cpp.o: CMakeFiles/renderer.dir/flags.make
+CMakeFiles/renderer.dir/src/VBO.cpp.o: /home/Samuel/Desktop/Projects/renderer/src/VBO.cpp
+CMakeFiles/renderer.dir/src/VBO.cpp.o: CMakeFiles/renderer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Samuel/Desktop/Projects/renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/renderer.dir/src/VBO.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/renderer.dir/src/VBO.cpp.o -MF CMakeFiles/renderer.dir/src/VBO.cpp.o.d -o CMakeFiles/renderer.dir/src/VBO.cpp.o -c /home/Samuel/Desktop/Projects/renderer/src/VBO.cpp
+
+CMakeFiles/renderer.dir/src/VBO.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/renderer.dir/src/VBO.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Samuel/Desktop/Projects/renderer/src/VBO.cpp > CMakeFiles/renderer.dir/src/VBO.cpp.i
+
+CMakeFiles/renderer.dir/src/VBO.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/renderer.dir/src/VBO.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Samuel/Desktop/Projects/renderer/src/VBO.cpp -o CMakeFiles/renderer.dir/src/VBO.cpp.s
+
+CMakeFiles/renderer.dir/src/EBO.cpp.o: CMakeFiles/renderer.dir/flags.make
+CMakeFiles/renderer.dir/src/EBO.cpp.o: /home/Samuel/Desktop/Projects/renderer/src/EBO.cpp
+CMakeFiles/renderer.dir/src/EBO.cpp.o: CMakeFiles/renderer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Samuel/Desktop/Projects/renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/renderer.dir/src/EBO.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/renderer.dir/src/EBO.cpp.o -MF CMakeFiles/renderer.dir/src/EBO.cpp.o.d -o CMakeFiles/renderer.dir/src/EBO.cpp.o -c /home/Samuel/Desktop/Projects/renderer/src/EBO.cpp
+
+CMakeFiles/renderer.dir/src/EBO.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/renderer.dir/src/EBO.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Samuel/Desktop/Projects/renderer/src/EBO.cpp > CMakeFiles/renderer.dir/src/EBO.cpp.i
+
+CMakeFiles/renderer.dir/src/EBO.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/renderer.dir/src/EBO.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Samuel/Desktop/Projects/renderer/src/EBO.cpp -o CMakeFiles/renderer.dir/src/EBO.cpp.s
+
 # Object files for target renderer
 renderer_OBJECTS = \
 "CMakeFiles/renderer.dir/src/main.cpp.o" \
 "CMakeFiles/renderer.dir/src/Object.cpp.o" \
 "CMakeFiles/renderer.dir/src/Vect3.cpp.o" \
 "CMakeFiles/renderer.dir/src/glad.c.o" \
-"CMakeFiles/renderer.dir/src/Shader.cpp.o"
+"CMakeFiles/renderer.dir/src/Shader.cpp.o" \
+"CMakeFiles/renderer.dir/src/VAO.cpp.o" \
+"CMakeFiles/renderer.dir/src/VBO.cpp.o" \
+"CMakeFiles/renderer.dir/src/EBO.cpp.o"
 
 # External object files for target renderer
 renderer_EXTERNAL_OBJECTS =
@@ -158,10 +203,13 @@ renderer: CMakeFiles/renderer.dir/src/Object.cpp.o
 renderer: CMakeFiles/renderer.dir/src/Vect3.cpp.o
 renderer: CMakeFiles/renderer.dir/src/glad.c.o
 renderer: CMakeFiles/renderer.dir/src/Shader.cpp.o
+renderer: CMakeFiles/renderer.dir/src/VAO.cpp.o
+renderer: CMakeFiles/renderer.dir/src/VBO.cpp.o
+renderer: CMakeFiles/renderer.dir/src/EBO.cpp.o
 renderer: CMakeFiles/renderer.dir/build.make
 renderer: CMakeFiles/renderer.dir/compiler_depend.ts
 renderer: CMakeFiles/renderer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/Samuel/Desktop/Projects/renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable renderer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/Samuel/Desktop/Projects/renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable renderer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/renderer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

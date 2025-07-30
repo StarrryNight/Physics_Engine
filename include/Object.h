@@ -10,6 +10,8 @@
 #include <string>
 #include <glm/glm.hpp>
 #include "../include/Shader.h"
+#include "../include/VAO.h"
+#include "../include/VBO.h"
 
 class Object{
     public:  
@@ -41,7 +43,8 @@ class Object{
             glm::vec3 velocity;
             glm::vec3 acceleration;
             Shader* shader;
-            unsigned int VAO, VBO;
+            VAO VAO1;
+            VBO VBO1;
 };
 
 #endif

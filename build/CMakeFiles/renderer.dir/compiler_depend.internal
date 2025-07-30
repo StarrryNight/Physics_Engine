@@ -3,9 +3,14 @@
 
 CMakeFiles/renderer.dir/src/Object.cpp.o
  /home/Samuel/Desktop/Projects/renderer/src/Object.cpp
+ /home/Samuel/Desktop/Projects/renderer/include/glad.h
  /home/Samuel/Desktop/Projects/renderer/include/Shader.h
+ /home/Samuel/Desktop/Projects/renderer/include/VAO.h
+ /home/Samuel/Desktop/Projects/renderer/include/VBO.h
  /home/Samuel/Desktop/Projects/renderer/include/Object.h
  /home/Samuel/Desktop/Projects/renderer/include/Shader.h
+ /home/Samuel/Desktop/Projects/renderer/include/VAO.h
+ /home/Samuel/Desktop/Projects/renderer/include/VBO.h
  /home/Samuel/Desktop/Projects/renderer/include/glad.h
  /usr/include/GLFW/glfw3.h
  /usr/include/KHR/khrplatform.h

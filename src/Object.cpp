@@ -8,7 +8,8 @@
 #include <glm/gtc/matrix_transform.hpp> 
 #include "../include/Object.h"
 #include "../include/Shader.h"
-
+#include "../include/VAO.h"
+#include "../include/VBO.h"
 
 Object::Object(const std::string& name,
         int id,
@@ -32,15 +33,16 @@ void Object::setup() {
          0.0f,  0.5f, 0.0f
     };
     
-    glGenVertexArrays(1, &VAO);
-    glGenBuffers(1, &VBO);
+    
+    VAO1.Bind();
 
-    glBindVertexArray(VAO);
-    glBindBuffer(GL_ARRAY_BUFFER, VBO);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+    VBO1 = VBO(vertices, sizeof(vertices));
+    
+    VAO1.LinkVBO(VBO1,0);
+    VAO1.Unbind();
+    VBO1.Unbind();
 
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
-    glEnableVertexAttribArray(0);
+    
 }
 
 void Object::disrupt(
