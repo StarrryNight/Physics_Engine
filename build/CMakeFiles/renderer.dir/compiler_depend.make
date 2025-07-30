@@ -272,6 +272,8 @@ CMakeFiles/renderer.dir/src/Object.cpp.o: /home/Samuel/Desktop/Projects/renderer
   /usr/include/glm/detail/type_vec4.hpp \
   /usr/include/glm/detail/type_vec4.inl \
   /usr/include/glm/exponential.hpp \
+  /usr/include/glm/ext/matrix_clip_space.hpp \
+  /usr/include/glm/ext/matrix_clip_space.inl \
   /usr/include/glm/ext/matrix_double2x2.hpp \
   /usr/include/glm/ext/matrix_double2x2_precision.hpp \
   /usr/include/glm/ext/matrix_double2x3.hpp \
@@ -308,6 +310,12 @@ CMakeFiles/renderer.dir/src/Object.cpp.o: /home/Samuel/Desktop/Projects/renderer
   /usr/include/glm/ext/matrix_float4x3_precision.hpp \
   /usr/include/glm/ext/matrix_float4x4.hpp \
   /usr/include/glm/ext/matrix_float4x4_precision.hpp \
+  /usr/include/glm/ext/matrix_projection.hpp \
+  /usr/include/glm/ext/matrix_projection.inl \
+  /usr/include/glm/ext/matrix_transform.hpp \
+  /usr/include/glm/ext/matrix_transform.inl \
+  /usr/include/glm/ext/scalar_constants.hpp \
+  /usr/include/glm/ext/scalar_constants.inl \
   /usr/include/glm/ext/scalar_int_sized.hpp \
   /usr/include/glm/ext/scalar_uint_sized.hpp \
   /usr/include/glm/ext/vector_bool2.hpp \
@@ -343,6 +351,10 @@ CMakeFiles/renderer.dir/src/Object.cpp.o: /home/Samuel/Desktop/Projects/renderer
   /usr/include/glm/fwd.hpp \
   /usr/include/glm/geometric.hpp \
   /usr/include/glm/glm.hpp \
+  /usr/include/glm/gtc/constants.hpp \
+  /usr/include/glm/gtc/constants.inl \
+  /usr/include/glm/gtc/matrix_transform.hpp \
+  /usr/include/glm/gtc/matrix_transform.inl \
   /usr/include/glm/integer.hpp \
   /usr/include/glm/mat2x2.hpp \
   /usr/include/glm/mat2x3.hpp \
@@ -393,8 +405,6 @@ CMakeFiles/renderer.dir/src/Object.cpp.o: /home/Samuel/Desktop/Projects/renderer
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/syslimits.h
 
 CMakeFiles/renderer.dir/src/Shader.cpp.o: /home/Samuel/Desktop/Projects/renderer/src/Shader.cpp \
-  /home/Samuel/Desktop/Projects/renderer/include/Shader.h \
-  /home/Samuel/Desktop/Projects/renderer/include/Object.h \
   /home/Samuel/Desktop/Projects/renderer/include/Shader.h \
   /home/Samuel/Desktop/Projects/renderer/include/glad.h \
   /usr/include/GLFW/glfw3.h \
@@ -1524,8 +1534,6 @@ CMakeFiles/renderer.dir/src/Object.cpp.o:
 
 /usr/lib/libc.so.6:
 
-/usr/lib/libXdmcp.so.6:
-
 /usr/lib/libX11.so.6:
 
 /usr/lib/libGLdispatch.so.0:
@@ -1586,8 +1594,6 @@ CMakeFiles/renderer.dir/src/glad.c.o:
 
 /usr/include/glm/trigonometric.hpp:
 
-/usr/include/glm/simd/platform.h:
-
 /usr/include/glm/packing.hpp:
 
 /usr/include/glm/mat4x3.hpp:
@@ -1599,6 +1605,12 @@ CMakeFiles/renderer.dir/src/glad.c.o:
 /usr/include/glm/mat2x4.hpp:
 
 /usr/include/glm/integer.hpp:
+
+/usr/include/glm/simd/platform.h:
+
+/usr/include/glm/gtc/matrix_transform.hpp:
+
+/usr/include/glm/gtc/constants.inl:
 
 /usr/include/glm/geometric.hpp:
 
@@ -1648,6 +1660,18 @@ CMakeFiles/renderer.dir/src/glad.c.o:
 
 /usr/include/glm/ext/scalar_uint_sized.hpp:
 
+/usr/include/glm/ext/scalar_constants.inl:
+
+/usr/include/glm/ext/scalar_constants.hpp:
+
+/usr/include/glm/ext/matrix_transform.hpp:
+
+/usr/include/glm/ext/matrix_projection.inl:
+
+/usr/lib/libXdmcp.so.6:
+
+/usr/include/glm/ext/matrix_projection.hpp:
+
 /usr/include/glm/ext/matrix_float4x4_precision.hpp:
 
 /usr/include/glm/ext/matrix_float4x4.hpp:
@@ -1663,6 +1687,8 @@ CMakeFiles/renderer.dir/src/glad.c.o:
 /usr/include/glm/ext/matrix_float3x4_precision.hpp:
 
 /usr/include/glm/ext/matrix_float3x3_precision.hpp:
+
+/usr/include/glm/ext/matrix_transform.inl:
 
 /usr/include/glm/ext/matrix_float3x3.hpp:
 
@@ -1709,6 +1735,8 @@ CMakeFiles/renderer.dir/src/glad.c.o:
 /usr/include/glm/ext/matrix_double2x3.hpp:
 
 /usr/include/glm/ext/matrix_double2x2.hpp:
+
+/usr/include/glm/ext/matrix_clip_space.hpp:
 
 /usr/include/glm/exponential.hpp:
 
@@ -2016,6 +2044,8 @@ CMakeFiles/renderer.dir/src/Shader.cpp.o:
 
 /usr/include/c++/15.1.1/bits/stl_iterator.h:
 
+/usr/include/glm/gtc/constants.hpp:
+
 /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/error_constants.h:
 
 /usr/include/bits/long-double.h:
@@ -2244,6 +2274,8 @@ CMakeFiles/renderer.dir/src/Shader.cpp.o:
 
 /usr/include/c++/15.1.1/ext/string_conversions.h:
 
+/usr/include/glm/ext/matrix_clip_space.inl:
+
 /usr/include/glm/detail/setup.hpp:
 
 /usr/include/c++/15.1.1/initializer_list:
@@ -2359,6 +2391,8 @@ CMakeFiles/renderer.dir/src/Shader.cpp.o:
 /usr/include/c++/15.1.1/bits/cpp_type_traits.h:
 
 /usr/include/glm/detail/type_mat2x2.inl:
+
+/usr/include/glm/gtc/matrix_transform.inl:
 
 /usr/include/glm/detail/qualifier.hpp:
 

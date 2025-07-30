@@ -37,8 +37,8 @@ int main() {
     glViewport(0, 0, screenWidth, screenHeight);
     std::cout << "OpenGL setup complete" << std::endl;
 
-    float startX = screenWidth/5.0f;
-    float startY = screenHeight/2.0f;
+    float startX = 0;  
+    float startY = (screenHeight/5.0f + screenHeight/2.0f) / (screenHeight/2.0f);  
     
 
     float prev_time = 0;
@@ -57,12 +57,16 @@ int main() {
     // Setup the object
     circle1.setup();
     
+
     while(!glfwWindowShouldClose(window)){
+        float dt = glfwGetTime()-prev_time;
+        prev_time = glfwGetTime();
         // Clear the screen
         glClearColor(0.07f, 0.13f, 0.17f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
         
         // Render the object
+        circle1.update(dt);
         circle1.render();
        
         //display

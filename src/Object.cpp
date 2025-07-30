@@ -5,6 +5,7 @@
 #include <vector>
 #include <cmath>
 #include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp> 
 #include "../include/Object.h"
 #include "../include/Shader.h"
 
@@ -62,6 +63,13 @@ void Object::update(float dt){
 void Object::render(){
     if (shader != nullptr) {
         shader->Use();
+        
+        // Create model matrix for positioning
+        glm::mat4 model = glm::mat4(1.0f);
+        model = glm::translate(model, position);  // Move to object's position
+        
+        // Set the model matrix in shader
+        shader->setMat4("model", model);
     }
     glBindVertexArray(VAO);
     glDrawArrays(GL_TRIANGLES, 0, 3);

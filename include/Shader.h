@@ -20,6 +20,9 @@ public:
     
     // Set uniform matrix4
     void setMat4(const std::string &name, const glm::mat4 &mat);
+    
+    // Set model matrix (for object positioning)
+    void setModelMatrix(const glm::mat4 &model);
 };
 
 #endif 
