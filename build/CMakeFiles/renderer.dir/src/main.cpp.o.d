@@ -342,10 +342,16 @@ CMakeFiles/renderer.dir/src/main.cpp.o: \
  /usr/include/c++/15.1.1/cstring /usr/include/string.h \
  /usr/include/strings.h /usr/include/glm/gtc/type_ptr.inl \
  /home/Samuel/Desktop/Projects/renderer/src/../include/Object.h \
+ /home/Samuel/Desktop/Projects/renderer/src/../include/../include/glad.h \
  /home/Samuel/Desktop/Projects/renderer/src/../include/../include/Shader.h \
  /home/Samuel/Desktop/Projects/renderer/src/../include/../include/VAO.h \
  /home/Samuel/Desktop/Projects/renderer/src/../include/../include/../include/glad.h \
  /home/Samuel/Desktop/Projects/renderer/src/../include/../include/VBO.h \
  /home/Samuel/Desktop/Projects/renderer/src/../include/../include/VBO.h \
+ /home/Samuel/Desktop/Projects/renderer/src/../include/../include/EBO.h \
  /home/Samuel/Desktop/Projects/renderer/src/../include/Shader.h \
- /home/Samuel/Desktop/Projects/renderer/src/../include/Camera.h
+ /home/Samuel/Desktop/Projects/renderer/src/../include/Camera.h \
+ /home/Samuel/Desktop/Projects/renderer/src/../include/Planets.h \
+ /home/Samuel/Desktop/Projects/renderer/src/../include/Object.h \
+ /home/Samuel/Desktop/Projects/renderer/src/../include/PhysicsManager.h \
+ /home/Samuel/Desktop/Projects/renderer/src/../include/Planets.h

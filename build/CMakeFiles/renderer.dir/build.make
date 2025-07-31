@@ -198,6 +198,34 @@ CMakeFiles/renderer.dir/src/Camera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/renderer.dir/src/Camera.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Samuel/Desktop/Projects/renderer/src/Camera.cpp -o CMakeFiles/renderer.dir/src/Camera.cpp.s
 
+CMakeFiles/renderer.dir/src/Planets.cpp.o: CMakeFiles/renderer.dir/flags.make
+CMakeFiles/renderer.dir/src/Planets.cpp.o: /home/Samuel/Desktop/Projects/renderer/src/Planets.cpp
+CMakeFiles/renderer.dir/src/Planets.cpp.o: CMakeFiles/renderer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Samuel/Desktop/Projects/renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/renderer.dir/src/Planets.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/renderer.dir/src/Planets.cpp.o -MF CMakeFiles/renderer.dir/src/Planets.cpp.o.d -o CMakeFiles/renderer.dir/src/Planets.cpp.o -c /home/Samuel/Desktop/Projects/renderer/src/Planets.cpp
+
+CMakeFiles/renderer.dir/src/Planets.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/renderer.dir/src/Planets.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Samuel/Desktop/Projects/renderer/src/Planets.cpp > CMakeFiles/renderer.dir/src/Planets.cpp.i
+
+CMakeFiles/renderer.dir/src/Planets.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/renderer.dir/src/Planets.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Samuel/Desktop/Projects/renderer/src/Planets.cpp -o CMakeFiles/renderer.dir/src/Planets.cpp.s
+
+CMakeFiles/renderer.dir/src/PhysicsManager.cpp.o: CMakeFiles/renderer.dir/flags.make
+CMakeFiles/renderer.dir/src/PhysicsManager.cpp.o: /home/Samuel/Desktop/Projects/renderer/src/PhysicsManager.cpp
+CMakeFiles/renderer.dir/src/PhysicsManager.cpp.o: CMakeFiles/renderer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Samuel/Desktop/Projects/renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/renderer.dir/src/PhysicsManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/renderer.dir/src/PhysicsManager.cpp.o -MF CMakeFiles/renderer.dir/src/PhysicsManager.cpp.o.d -o CMakeFiles/renderer.dir/src/PhysicsManager.cpp.o -c /home/Samuel/Desktop/Projects/renderer/src/PhysicsManager.cpp
+
+CMakeFiles/renderer.dir/src/PhysicsManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/renderer.dir/src/PhysicsManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Samuel/Desktop/Projects/renderer/src/PhysicsManager.cpp > CMakeFiles/renderer.dir/src/PhysicsManager.cpp.i
+
+CMakeFiles/renderer.dir/src/PhysicsManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/renderer.dir/src/PhysicsManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Samuel/Desktop/Projects/renderer/src/PhysicsManager.cpp -o CMakeFiles/renderer.dir/src/PhysicsManager.cpp.s
+
 # Object files for target renderer
 renderer_OBJECTS = \
 "CMakeFiles/renderer.dir/src/main.cpp.o" \
@@ -208,7 +236,9 @@ renderer_OBJECTS = \
 "CMakeFiles/renderer.dir/src/VAO.cpp.o" \
 "CMakeFiles/renderer.dir/src/VBO.cpp.o" \
 "CMakeFiles/renderer.dir/src/EBO.cpp.o" \
-"CMakeFiles/renderer.dir/src/Camera.cpp.o"
+"CMakeFiles/renderer.dir/src/Camera.cpp.o" \
+"CMakeFiles/renderer.dir/src/Planets.cpp.o" \
+"CMakeFiles/renderer.dir/src/PhysicsManager.cpp.o"
 
 # External object files for target renderer
 renderer_EXTERNAL_OBJECTS =
@@ -222,10 +252,12 @@ renderer: CMakeFiles/renderer.dir/src/VAO.cpp.o
 renderer: CMakeFiles/renderer.dir/src/VBO.cpp.o
 renderer: CMakeFiles/renderer.dir/src/EBO.cpp.o
 renderer: CMakeFiles/renderer.dir/src/Camera.cpp.o
+renderer: CMakeFiles/renderer.dir/src/Planets.cpp.o
+renderer: CMakeFiles/renderer.dir/src/PhysicsManager.cpp.o
 renderer: CMakeFiles/renderer.dir/build.make
 renderer: CMakeFiles/renderer.dir/compiler_depend.ts
 renderer: CMakeFiles/renderer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/Samuel/Desktop/Projects/renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable renderer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/Samuel/Desktop/Projects/renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable renderer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/renderer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

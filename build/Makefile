@@ -201,6 +201,54 @@ src/Object.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/renderer.dir/build.make CMakeFiles/renderer.dir/src/Object.cpp.s
 .PHONY : src/Object.cpp.s
 
+src/PhysicsManager.o: src/PhysicsManager.cpp.o
+.PHONY : src/PhysicsManager.o
+
+# target to build an object file
+src/PhysicsManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/renderer.dir/build.make CMakeFiles/renderer.dir/src/PhysicsManager.cpp.o
+.PHONY : src/PhysicsManager.cpp.o
+
+src/PhysicsManager.i: src/PhysicsManager.cpp.i
+.PHONY : src/PhysicsManager.i
+
+# target to preprocess a source file
+src/PhysicsManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/renderer.dir/build.make CMakeFiles/renderer.dir/src/PhysicsManager.cpp.i
+.PHONY : src/PhysicsManager.cpp.i
+
+src/PhysicsManager.s: src/PhysicsManager.cpp.s
+.PHONY : src/PhysicsManager.s
+
+# target to generate assembly for a file
+src/PhysicsManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/renderer.dir/build.make CMakeFiles/renderer.dir/src/PhysicsManager.cpp.s
+.PHONY : src/PhysicsManager.cpp.s
+
+src/Planets.o: src/Planets.cpp.o
+.PHONY : src/Planets.o
+
+# target to build an object file
+src/Planets.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/renderer.dir/build.make CMakeFiles/renderer.dir/src/Planets.cpp.o
+.PHONY : src/Planets.cpp.o
+
+src/Planets.i: src/Planets.cpp.i
+.PHONY : src/Planets.i
+
+# target to preprocess a source file
+src/Planets.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/renderer.dir/build.make CMakeFiles/renderer.dir/src/Planets.cpp.i
+.PHONY : src/Planets.cpp.i
+
+src/Planets.s: src/Planets.cpp.s
+.PHONY : src/Planets.s
+
+# target to generate assembly for a file
+src/Planets.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/renderer.dir/build.make CMakeFiles/renderer.dir/src/Planets.cpp.s
+.PHONY : src/Planets.cpp.s
+
 src/Shader.o: src/Shader.cpp.o
 .PHONY : src/Shader.o
 
@@ -363,6 +411,12 @@ help:
 	@echo "... src/Object.o"
 	@echo "... src/Object.i"
 	@echo "... src/Object.s"
+	@echo "... src/PhysicsManager.o"
+	@echo "... src/PhysicsManager.i"
+	@echo "... src/PhysicsManager.s"
+	@echo "... src/Planets.o"
+	@echo "... src/Planets.i"
+	@echo "... src/Planets.s"
 	@echo "... src/Shader.o"
 	@echo "... src/Shader.i"
 	@echo "... src/Shader.s"

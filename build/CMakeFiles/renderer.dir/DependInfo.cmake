@@ -12,6 +12,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/Samuel/Desktop/Projects/renderer/src/Camera.cpp" "CMakeFiles/renderer.dir/src/Camera.cpp.o" "gcc" "CMakeFiles/renderer.dir/src/Camera.cpp.o.d"
   "/home/Samuel/Desktop/Projects/renderer/src/EBO.cpp" "CMakeFiles/renderer.dir/src/EBO.cpp.o" "gcc" "CMakeFiles/renderer.dir/src/EBO.cpp.o.d"
   "/home/Samuel/Desktop/Projects/renderer/src/Object.cpp" "CMakeFiles/renderer.dir/src/Object.cpp.o" "gcc" "CMakeFiles/renderer.dir/src/Object.cpp.o.d"
+  "/home/Samuel/Desktop/Projects/renderer/src/PhysicsManager.cpp" "CMakeFiles/renderer.dir/src/PhysicsManager.cpp.o" "gcc" "CMakeFiles/renderer.dir/src/PhysicsManager.cpp.o.d"
+  "/home/Samuel/Desktop/Projects/renderer/src/Planets.cpp" "CMakeFiles/renderer.dir/src/Planets.cpp.o" "gcc" "CMakeFiles/renderer.dir/src/Planets.cpp.o.d"
   "/home/Samuel/Desktop/Projects/renderer/src/Shader.cpp" "CMakeFiles/renderer.dir/src/Shader.cpp.o" "gcc" "CMakeFiles/renderer.dir/src/Shader.cpp.o.d"
   "/home/Samuel/Desktop/Projects/renderer/src/VAO.cpp" "CMakeFiles/renderer.dir/src/VAO.cpp.o" "gcc" "CMakeFiles/renderer.dir/src/VAO.cpp.o.d"
   "/home/Samuel/Desktop/Projects/renderer/src/VBO.cpp" "CMakeFiles/renderer.dir/src/VBO.cpp.o" "gcc" "CMakeFiles/renderer.dir/src/VBO.cpp.o.d"

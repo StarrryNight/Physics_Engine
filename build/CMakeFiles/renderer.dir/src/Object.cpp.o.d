@@ -308,11 +308,14 @@ CMakeFiles/renderer.dir/src/Object.cpp.o: \
  /usr/include/glm/ext/matrix_transform.inl \
  /usr/include/glm/gtc/matrix_transform.inl \
  /home/Samuel/Desktop/Projects/renderer/src/../include/Object.h \
+ /home/Samuel/Desktop/Projects/renderer/src/../include/../include/glad.h \
  /home/Samuel/Desktop/Projects/renderer/src/../include/../include/Shader.h \
  /home/Samuel/Desktop/Projects/renderer/src/../include/../include/VAO.h \
  /home/Samuel/Desktop/Projects/renderer/src/../include/../include/../include/glad.h \
  /home/Samuel/Desktop/Projects/renderer/src/../include/../include/VBO.h \
  /home/Samuel/Desktop/Projects/renderer/src/../include/../include/VBO.h \
+ /home/Samuel/Desktop/Projects/renderer/src/../include/../include/EBO.h \
  /home/Samuel/Desktop/Projects/renderer/src/../include/Shader.h \
  /home/Samuel/Desktop/Projects/renderer/src/../include/VAO.h \
- /home/Samuel/Desktop/Projects/renderer/src/../include/VBO.h
+ /home/Samuel/Desktop/Projects/renderer/src/../include/VBO.h \
+ /home/Samuel/Desktop/Projects/renderer/src/../include/EBO.h
