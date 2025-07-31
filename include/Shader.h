@@ -23,6 +23,12 @@ public:
     
     // Set model matrix (for object positioning)
     void setModelMatrix(const glm::mat4 &model);
+    
+    // Set view matrix (for camera positioning)
+    void setViewMatrix(const glm::mat4 &view);
+    
+    // Set projection matrix (for 3D perspective)
+    void setProjectionMatrix(const glm::mat4 &projection);
 };
 
 #endif 

@@ -3,13 +3,13 @@
 
 #include "../include/glad.h"
 
-class VBO{
+class EBO{
     public:
-    int ID;
-    EBO(int* vertices, GLsizeiptr size);
+    GLuint ID;
+    EBO(unsigned int* indices, GLsizeiptr size);
 
     void Bind();
-    Void Unbind();
+    void Unbind();
     void Delete();
 };
 

@@ -8,13 +8,15 @@
 #include "../include/Shader.h"
 
 Shader::Shader(const char* vertexPath, const char* fragmentPath) {
-    // Create vertex shader with model matrix support
+    // Create vertex shader with 3D transformation support
     const char* vertexShaderSource = "#version 330 core\n"
         "layout (location = 0) in vec3 aPos;\n"
         "uniform mat4 model;\n"
+        "uniform mat4 view;\n"
+        "uniform mat4 projection;\n"
         "void main()\n"
         "{\n"
-        "   gl_Position = model * vec4(aPos.x, aPos.y, aPos.z, 1.0);\n"
+        "   gl_Position = projection * view * model * vec4(aPos.x, aPos.y, aPos.z, 1.0);\n"
         "}\0";
         
     const char* fragmentShaderSource = "#version 330 core\n"
@@ -55,4 +57,12 @@ void Shader::setMat4(const std::string &name, const glm::mat4 &mat) {
 
 void Shader::setModelMatrix(const glm::mat4 &model) {
     setMat4("model", model);
+}
+
+void Shader::setViewMatrix(const glm::mat4 &view) {
+    setMat4("view", view);
+}
+
+void Shader::setProjectionMatrix(const glm::mat4 &projection) {
+    setMat4("projection", projection);
 }

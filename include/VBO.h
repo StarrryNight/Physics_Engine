@@ -5,8 +5,8 @@
 
 class VBO{
     public:
-    int ID;
-    VBO(int* vertices, int size);
+    GLuint ID;
+    VBO(float* vertices, int size);
 
     void Bind();
     void Unbind();

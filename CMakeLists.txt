@@ -11,6 +11,9 @@ add_executable(renderer
     src/VAO.cpp
     src/VBO.cpp
     src/EBO.cpp
+    src/Camera.cpp
+    src/Planets.cpp
+    src/PhysicsManager.cpp
 )
 
 target_link_libraries(renderer GL glfw)
